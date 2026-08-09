@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# System & Editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Local config
+.env
+*.local

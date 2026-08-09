@@ -1,0 +1,18 @@
+{
+  "name": "deadtown-website",
+  "version": "1.0.0",
+  "description": "DeadTown - Official FiveM Community Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "deadtown",
+    "fivem",
+    "roleplay",
+    "gta5"
+  ],
+  "author": "DeadTown Team",
+  "license": "ISC"
+}

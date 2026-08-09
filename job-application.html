@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <title>بوابة تقديم الوظائف | DeadTown</title>
+    <meta content="بوابة التقديم الرسمية للوظائف الحكومية (الشرطة، الإسعاف، وزارة العدل) في سيرفر DeadTown." name="description"/>
+    <meta content="تقديم وظائف ديد تاون, تقديم شرطة فايف ام, تقديم اسعاف فايف ام, DeadTown Application" name="keywords"/>
+    <meta content="DeadTown Team" name="author"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+    <meta content="ar" http-equiv="Content-Language"/>
+    <meta content="Arabic" name="language"/>
+
+    <link href="assets/images/favicon.ico" rel="icon" type="image/png"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
+
+    <!-- Bootstrap 5 RTL -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" rel="stylesheet"/>
+    <!-- Font Awesome Icons -->
+    <link href="assets/font-awesome-lib/icon/font-awesome.min.css" rel="stylesheet"/>
+    <!-- Core & Vendor CSS -->
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/responsive.css" rel="stylesheet"/>
+    <link href="assets/css/aos.css" rel="stylesheet"/>
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"/>
+</head>
+<body>
+<div class="site-wrapper">
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar container navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand position-relative p-0" href="index.html">
+                    <img alt="DeadTown Logo" src="assets/images/logo.png"/>
+                </a>
+                <button class="navbar-toggler" id="sidebarEvent" type="button" aria-label="فتح القائمة">
+                    <i class="fa-solid fa-bars" style="color: #A333FF; font-size: 1.5rem;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav position-relative ms-auto mx-4 mb-2 mb-lg-0 d-flex justify-content-center align-items-center gap-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rules.html">القوانين</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="job-application.html">تقديم الوظائف</a></li>
+                    </ul>
+                    <div class="d-none d-lg-flex align-items-center gap-3">
+                        <a class="btn-deadtown-primary" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-discord"></i> دخول الديسكورد
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer Sidebar -->
+        <aside>
+            <div class="sidebar">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <a href="index.html"><img alt="DeadTown Logo" src="assets/images/logo.png" style="height: 40px;"/></a>
+                    <button id="closeBtn" type="button" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <ul class="nav-links text-lg-start">
+                    <li><a class="nav-link" href="index.html"><i class="fa-solid fa-house me-2"></i> الرئيسية</a></li>
+                    <li><a class="nav-link" href="rules.html"><i class="fa-solid fa-scale-balanced me-2"></i> القوانين</a></li>
+                    <li><a class="nav-link active" href="job-application.html"><i class="fa-solid fa-id-card me-2"></i> تقديم الوظائف</a></li>
+                    <li><a class="nav-link text-primary" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener"><i class="fa-brands fa-discord me-2"></i> سيرفر الديسكورد</a></li>
+                </ul>
+            </div>
+        </aside>
+    </header>
+
+    <!-- Page Banner / Header -->
+    <div class="hero-main2 hero_faq py-5">
+        <div class="container text-center" data-aos="fade-up">
+            <h1 class="display-4 fw-bold text-white mb-2">بوابة التقديم والتوظيف</h1>
+            <p class="text-muted lead mx-auto mb-4" style="max-width: 650px;">
+                اختر القطاع الذي ترغب بالانضمام إليه وقم بتعبئة نموذج التقديم الرسمي لسيرفر DeadTown.
+            </p>
+            <nav aria-label="breadcrumb">
+                <div class="breadcrumb d-inline-flex gap-3 align-items-center px-4 py-2 glass-panel">
+                    <div class="breadcrumb-item"><a href="index.html" class="text-muted text-decoration-none"><i class="fa-solid fa-house me-1"></i> الرئيسية</a></div>
+                    <i class="fa-solid fa-chevron-left text-muted small"></i>
+                    <div aria-current="page" class="breadcrumb-item active text-primary fw-bold">تقديم الوظائف</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Application Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up">
+                    <div class="job-portal-card">
+                        
+                        <!-- Step 1: Select Department -->
+                        <div class="mb-5">
+                            <h3 class="text-white fw-bold mb-2"><i class="fa-solid fa-layer-group text-primary me-2"></i> 1. اختر القطاع المطلوب:</h3>
+                            <p class="text-muted mb-4">انقر على القطاع الذي تود تقديم استمارة التوظيف له</p>
+                            
+                            <div class="dept-grid">
+                                <div class="dept-choice-card selected" data-dept="police">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <h5 class="text-white fw-bold mb-1">قطاع الشرطة</h5>
+                                    <small class="text-muted">التحقيق والعمليات الميدانية</small>
+                                </div>
+
+                                <div class="dept-choice-card" data-dept="ems">
+                                    <i class="fa-solid fa-truck-medical text-danger"></i>
+                                    <h5 class="text-white fw-bold mb-1">قطاع الإسعاف</h5>
+                                    <small class="text-muted">الرعاية الطبية والإنقاذ</small>
+                                </div>
+
+                                <div class="dept-choice-card" data-dept="justice">
+                                    <i class="fa-solid fa-scale-balanced text-warning"></i>
+                                    <h5 class="text-white fw-bold mb-1">وزارة العدل</h5>
+                                    <small class="text-muted">المحاماة والقضاء الدستوري</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Application Form -->
+                        <form id="jobAppForm">
+                            <input type="hidden" id="selectedDeptInput" name="department" value="قطاع الشرطة"/>
+
+                            <div class="mb-5">
+                                <h3 class="text-white fw-bold mb-3"><i class="fa-solid fa-user-gear text-primary me-2"></i> 2. المعلومات الشخصية وبيانات السيرفر:</h3>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label for="discordUser" class="form-label text-light fw-bold">اسم حسابك في الديسكورد (Discord Username) *</label>
+                                        <input type="text" class="form-control form-control-deadtown" id="discordUser" placeholder="مثال: player#1234 أو user_deadtown" required/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="steamHex" class="form-label text-light fw-bold">Steam Hex ID الخاص بك *</label>
+                                        <input type="text" class="form-control form-control-deadtown" id="steamHex" placeholder="مثال: 1100001xxxxxxxx" required/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="charName" class="form-label text-light fw-bold">اسم الشخصية داخل الرول بلاي (عربي ثلاثي) *</label>
+                                        <input type="text" class="form-control form-control-deadtown" id="charName" placeholder="مثال: خالد محمد العتيبي" required/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="realAge" class="form-label text-light fw-bold">عمرك الحقيقي *</label>
+                                        <input type="number" class="form-control form-control-deadtown" id="realAge" min="1" max="99" placeholder="18" required/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Department Specific Questions -->
+                            <div class="mb-5">
+                                <h3 class="text-white fw-bold mb-3"><i class="fa-solid fa-clipboard-question text-primary me-2"></i> 3. الأسئلة المهنية والسيناريوهات:</h3>
+                                
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <label for="experience" class="form-label text-light fw-bold">الخبرات السابقة في الرول بلاي وسيرفرات FiveM *</label>
+                                        <textarea class="form-control form-control-deadtown" id="experience" rows="3" placeholder="اذكر السيرفرات السابقة والرتب التي شغلتها بالتفصيل..." required></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="scenarioAnswer" class="form-label text-light fw-bold">كيف تتصرف في حال واجهت لاعباً يخالف قانون NLR أو PowerGaming أمامك؟ *</label>
+                                        <textarea class="form-control form-control-deadtown" id="scenarioAnswer" rows="3" placeholder="اشرح الإجراء الواقعي داخل اللعبة ثم الإجراء الرقابي..." required></textarea>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="playHours" class="form-label text-light fw-bold">ساعات التواجد اليومية المتوقعة *</label>
+                                        <select class="form-select form-control-deadtown" id="playHours" required>
+                                            <option value="2-4">2 إلى 4 ساعات يومياً</option>
+                                            <option value="4-6" selected>4 إلى 6 ساعات يومياً</option>
+                                            <option value="6+">أكثر من 6 ساعات يومياً</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="micQuality" class="form-label text-light fw-bold">جودة المايكروفون وبيئة التحدث *</label>
+                                        <select class="form-select form-control-deadtown" id="micQuality" required>
+                                            <option value="ممتازة" selected>ممتازة - خالية تماماً من الضوضاء والصدى</option>
+                                            <option value="جيدة جداً">جيدة جداً مع فلتر عزل صوتي</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 4: Rules Agreement -->
+                            <div class="mb-5 p-4 rounded-3" style="background: rgba(15,9,36,0.7); border: 1px solid rgba(137,0,255,0.3);">
+                                <h4 class="text-white fw-bold mb-3"><i class="fa-solid fa-handshake text-primary me-2"></i> 4. الإقرار والتعهد بالالتزام:</h4>
+                                
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="checkRules" required/>
+                                    <label class="form-check-label text-light" for="checkRules">
+                                        أقر بأنني اطلعت على كامل <a href="rules.html" target="_blank" class="text-primary text-decoration-underline">قوانين سيرفر DeadTown</a> وأتعهد بالالتزام بها تحت طائلة العقوبات والوارنات.
+                                    </label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="checkVoice" required/>
+                                    <label class="form-check-label text-light" for="checkVoice">
+                                        أتعهد بعدم استخدام أي برامج خارجية لتغيير الصوت أو التعديل على ملفات اللعبة دون إذن رسمي.
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkHonest" required/>
+                                    <label class="form-check-label text-light" for="checkHonest">
+                                        جميع المعلومات المقدمة في هذا النموذج صحيحة وتمثلني شخصياً.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="text-center">
+                                <button type="submit" class="btn-deadtown-primary btn-lg px-5 py-3 shadow-lg">
+                                    <i class="fa-solid fa-paper-plane me-2"></i> إرسال استمارة التقديم الرسمية
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="pt-5 pb-4 border-top" style="border-color: rgba(137,0,255,0.2) !important; background: #070412;">
+        <div class="container">
+            <div class="row g-4 align-items-center mb-4">
+                <div class="col-md-6 text-center text-md-start">
+                    <a href="index.html">
+                        <img alt="DeadTown Logo" src="assets/images/logo.png" style="height: 50px;" class="mb-3"/>
+                    </a>
+                    <p class="text-muted mb-0" style="max-width: 450px;">
+                        DeadTown - السيرفر العربي الأكبر لتجربة لعب واقعية متكاملة في عالم FiveM Roleplay.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a class="btn-deadtown-outline py-2 px-3" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener" aria-label="Discord">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                        <a class="btn-deadtown-outline py-2 px-3" href="https://kick.com/yazenali800" target="_blank" rel="noopener" aria-label="Kick">
+                            <i class="fa-solid fa-play text-success"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border-color: rgba(137,0,255,0.2);"/>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-2">
+                <p class="text-muted small mb-0">حقوق الطبع والنشر © 2025 DeadTown. جميع الحقوق محفوظة.</p>
+                <div class="d-flex gap-4 mt-3 mt-md-0">
+                    <a href="index.html" class="text-muted small text-decoration-none">الرئيسية</a>
+                    <a href="rules.html" class="text-muted small text-decoration-none">القوانين</a>
+                    <a href="job-application.html" class="text-muted small text-decoration-none">الوظائف</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Back to Top Button -->
+<button class="btnTwo" id="backToTopBtn" type="button" aria-label="العودة للأعلى" style="display: none;">
+    <i class="fa-solid fa-arrow-turn-up"></i>
+</button>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/custom.js"></script>
+
+<!-- Application Submission Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const deptCards = document.querySelectorAll('.dept-choice-card');
+    const deptInput = document.getElementById('selectedDeptInput');
+
+    const deptTitles = {
+        'police': 'قطاع الشرطة',
+        'ems': 'قطاع الإسعاف',
+        'justice': 'وزارة العدل والمحاماة'
+    };
+
+    deptCards.forEach(function (card) {
+        card.addEventListener('click', function () {
+            deptCards.forEach(c => c.classList.remove('selected'));
+            this.classList.add('selected');
+            const deptKey = this.getAttribute('data-dept');
+            if (deptInput) {
+                deptInput.value = deptTitles[deptKey] || 'قطاع الشرطة';
+            }
+        });
+    });
+
+    const jobForm = document.getElementById('jobAppForm');
+    if (jobForm) {
+        jobForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const ticketId = 'DT-' + Math.floor(100000 + Math.random() * 900000);
+            const payload = {
+                ticketId: ticketId,
+                department: deptInput.value,
+                discordUser: document.getElementById('discordUser').value.trim(),
+                steamHex: document.getElementById('steamHex').value.trim(),
+                charName: document.getElementById('charName').value.trim(),
+                realAge: document.getElementById('realAge').value,
+                experience: document.getElementById('experience').value.trim(),
+                scenarioAnswer: document.getElementById('scenarioAnswer').value.trim(),
+                playHours: document.getElementById('playHours').value,
+                micQuality: document.getElementById('micQuality').value
+            };
+
+            const discordVal = payload.discordUser;
+            const charVal = payload.charName;
+            const deptVal = payload.department;
+
+            let sent = false;
+            try {
+                const endpoint = (window.location.protocol === 'file:')
+                    ? 'http://localhost:3000/submit-application'
+                    : '/submit-application';
+
+                const res = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (res.status === 404) {
+                    sent = false;
+                    Swal.fire({
+                        title: 'تنبيه!',
+                        html: '<p class="text-light">الموقع مفتوح بدون تشغيل الخادم المحلي، لذلك لم تصل استمارتك للإدارة.</p><p class="text-light small">قم بتشغيل الموقع عبر <strong style="color:#53FC18;">run.bat</strong> ثم أعد إرسال الاستمارة من جديد.</p>',
+                        icon: 'warning',
+                        confirmButtonText: 'حسناً',
+                        confirmButtonColor: '#8900FF',
+                        background: '#160e33',
+                        color: '#ffffff'
+                    });
+                    return;
+                }
+
+                let data = {};
+                try {
+                    data = await res.json();
+                } catch (e) {
+                    data = {};
+                }
+                sent = data.ok === true;
+            } catch (err) {
+                sent = false;
+            }
+
+            if (!sent) {
+                Swal.fire({
+                    title: 'حدث خطأ!',
+                    html: '<p class="text-light">تعذر إرسال استمارتك إلى الإدارة.</p><p class="text-light small">تأكد من تشغيل الموقع عبر <strong style="color:#53FC18;">run.bat</strong> (الخادم المحلي) ثم أعد المحاولة.</p>',
+                    icon: 'error',
+                    confirmButtonText: 'حسناً',
+                    confirmButtonColor: '#8900FF',
+                    background: '#160e33',
+                    color: '#ffffff'
+                });
+                return;
+            }
+
+            Swal.fire({
+                title: 'تم استلام طلبك بنجاح!',
+                html: `
+                    <div class="text-center p-3">
+                        <div class="mb-3">
+                            <i class="fa-solid fa-circle-check fa-4x" style="color: #53FC18;"></i>
+                        </div>
+                        <h4 class="text-white mb-2">رقم تذكرة التقديم: <span style="color: #A333FF; font-weight: 800;">${ticketId}</span></h4>
+                        <p class="text-muted">القطاع المطلوب: <strong>${deptVal}</strong></p>
+                        <p class="text-light small">
+                            مرحباً <strong>${charVal}</strong>، تم حفظ استمارتك بنجاح وإرسالها للإدارة.<br/>
+                            يرجى التوجه إلى سيرفر الديسكورد وفتح تذكرة برقم التقديم لمتابعة المقابلة الصوتية.
+                        </p>
+                    </div>
+                `,
+                icon: 'success',
+                confirmButtonText: 'الدخول إلى الديسكورد الآن',
+                confirmButtonColor: '#8900FF',
+                showCancelButton: true,
+                cancelButtonText: 'إغلاق',
+                cancelButtonColor: '#332255',
+                background: '#160e33',
+                color: '#ffffff'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.open('https://discord.gg/U6n9MdBhqs', '_blank');
+                }
+                jobForm.reset();
+            });
+        });
+    }
+});
+</script>
+
+</body>
+</html>

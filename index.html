@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <title>DeadTown | سيرفر ديد تاون فايف ام</title>
+    <meta content="انضم إلى سيرفر DeadTown، أحد أكبر وأقوى سيرفرات فايف إم للرول بلاي في الشرق الأوسط. تواصل مع اللاعبين واستمتع بتجربة لعب مخصصة واستثنائية." name="description"/>
+    <meta content="DeadTown, سيرفر DeadTown, سيرفر ديد تاون, FiveM, سيرفرات CFW, سيرفرات فايف ام, ألعاب أونلاين, مجتمع اللاعبين العرب, سيرفرات مخصصة, مجتمع فايف ام, FiveM servers, سيرفرات فايف ام عربية, رول بلاي, كيك فايف ام, FiveM RP" name="keywords"/>
+    <meta content="DeadTown Team" name="author"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+    <meta content="ar" http-equiv="Content-Language"/>
+    <meta content="Arabic" name="language"/>
+    <meta content="website" property="og:type"/>
+    <meta content="DeadTown | سيرفر ديد تاون فايف ام" property="og:title"/>
+    <meta content="انضم إلى سيرفر DeadTown، أكبر مجتمع لعشاق FiveM. استمتع بتجربة لعب مخصصة وتواصل مع لاعبين من جميع أنحاء العالم." property="og:description"/>
+    <meta content="assets/images/logo.png" property="og:image"/>
+    <meta content="DeadTown" property="og:site_name"/>
+    <meta content="ar_AR" property="og:locale"/>
+
+    <link href="assets/images/favicon.ico" rel="icon" type="image/png"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
+
+    <!-- Bootstrap 5 RTL -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" rel="stylesheet"/>
+    <!-- Font Awesome Icons -->
+    <link href="assets/font-awesome-lib/icon/font-awesome.min.css" rel="stylesheet"/>
+    <!-- Core & Vendor CSS -->
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/responsive.css" rel="stylesheet"/>
+    <link href="assets/css/slick.min.css" rel="stylesheet"/>
+    <link href="assets/vendor/slick/slick-theme.css" rel="stylesheet"/>
+    <link href="assets/css/aos.css" rel="stylesheet"/>
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"/>
+</head>
+<body>
+<div class="site-wrapper">
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar container navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand position-relative p-0" href="index.html">
+                    <img alt="DeadTown Logo" src="assets/images/logo.png"/>
+                </a>
+                <button class="navbar-toggler" id="sidebarEvent" type="button" aria-label="فتح القائمة">
+                    <i class="fa-solid fa-bars" style="color: #A333FF; font-size: 1.5rem;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav position-relative ms-auto mx-4 mb-2 mb-lg-0 d-flex justify-content-center align-items-center gap-2">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rules.html">القوانين</a></li>
+                        <li class="nav-item"><a class="nav-link" href="job-application.html">تقديم الوظائف</a></li>
+                    </ul>
+                    <div class="d-none d-lg-flex align-items-center gap-3">
+                        <a class="btn-deadtown-primary" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-discord"></i> دخول الديسكورد
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer Sidebar -->
+        <aside>
+            <div class="sidebar">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <a href="index.html"><img alt="DeadTown Logo" src="assets/images/logo.png" style="height: 40px;"/></a>
+                    <button id="closeBtn" type="button" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <ul class="nav-links text-lg-start">
+                    <li><a class="nav-link" href="index.html"><i class="fa-solid fa-house me-2"></i> الرئيسية</a></li>
+                    <li><a class="nav-link" href="rules.html"><i class="fa-solid fa-scale-balanced me-2"></i> القوانين</a></li>
+                    <li><a class="nav-link" href="job-application.html"><i class="fa-solid fa-id-card me-2"></i> تقديم الوظائف</a></li>
+                    <li><a class="nav-link text-primary" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener"><i class="fa-brands fa-discord me-2"></i> سيرفر الديسكورد</a></li>
+                </ul>
+            </div>
+        </aside>
+    </header>
+
+    <!-- Hero Section with Background Video -->
+    <div class="hero_main">
+        <div class="hero-video-bg">
+            <!-- ضع رابط يوتيوب خاص بكم (فيديو بدون موسيقى/توبرج) بدلاً من YOUTUBE_VIDEO_ID -->
+            <div class="video-fallback" style="background-image: url('assets/images/deadtown-images/bg-3.png');"></div>
+            <iframe class="video" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUTUBE_VIDEO_ID&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3" title="DeadTown" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="overlay">
+            <div class="header-content">
+                <section id="hero" class="d-flex align-items-center" style="min-height: 80vh;">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 col-md-12 text-center" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="hero-badge">
+                                    <span class="pulse-dot"></span>
+                                    <span>سيرفر FiveM الرول بلاي الأقوى في الشرق الأوسط</span>
+                                </div>
+                                <h1 class="display-3 fw-bold text-white mb-3" style="letter-spacing: -1px; text-shadow: 0 0 35px rgba(137,0,255,0.7);">
+                                    DeadTown
+                                </h1>
+                                <p class="lead text-light mb-4 mx-auto" style="max-width: 800px; line-height: 1.9; font-size: 1.25rem;">
+                                    حياكم الله في سيرفر ديد تاون المتخصص في الرول بلاي الواقعي. نقدم لكم تجربة لعب فريدة ومتطورة مع أفضل مجتمع لاعبين وصناع محتوى في العالم العربي.
+                                </p>
+                                <div class="d-flex justify-content-center flex-wrap gap-3 mb-4">
+                                    <a class="btn-deadtown-primary" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener">
+                                        <i class="fa-brands fa-discord"></i> انضم الآن إلى السيرفر
+                                    </a>
+                                    <a class="btn-deadtown-outline" href="job-application.html">
+                                        <i class="fa-solid fa-user-plus"></i> تقديم الوظائف
+                                    </a>
+                                    <a class="btn-deadtown-outline" href="rules.html">
+                                        <i class="fa-solid fa-book-open"></i> قوانين السيرفر
+                                    </a>
+                                </div>
+                                <div class="server-status-pill">
+                                    <span class="pulse-dot"></span>
+                                    <span>حالة السيرفر: <strong>متصل (ONLINE)</strong></span>
+                                    <span class="mx-2">•</span>
+                                    <span><i class="fa-solid fa-users text-info"></i> اللاعبين: <strong>+1000 يومياً</strong></span>
+                                    <span class="mx-2">•</span>
+                                    <span><i class="fa-solid fa-shield-halved text-warning"></i> حماية كاملة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social & Community Stats Section -->
+    <section id="crafters" class="py-5 position-relative">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-left">
+                    <span class="text-uppercase fw-bold" style="color: #A333FF; letter-spacing: 2px;">COMMUNITY</span>
+                    <h2 class="display-6 fw-bold text-white mb-3">أضخم حضور على منصات التواصل</h2>
+                    <p class="text-light" style="line-height: 1.9; font-size: 1.1rem;">
+                        مجتمع سيرفر "ديد تاون" يمتلك حضورًا استثنائيًا كأحد أكبر مجتمعات FiveM في العالم العربي. نتميز بعدد لاعبين ومتابعين قياسي على ديسكورد، بالإضافة لكوننا أول مجتمع عربي يخصص له قسم رسمي في منصة البث الشهيرة Kick.com.
+                    </p>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="glass-panel p-4 text-center h-100 d-flex flex-column justify-content-center align-items-center">
+                                <img alt="Kick Platform" src="assets/images/index/crafter-1.png" class="img-fluid mb-3" style="max-height: 180px; border-radius: 12px;"/>
+                                <h4 class="text-white fw-bold">منصة كيك (Kick)</h4>
+                                <p class="text-muted small">قسم رسمي وبثوث يومية بجودة فائقة</p>
+                                <a class="btn-deadtown-outline btn-sm py-2 px-3 mt-2" href="https://kick.com/yazenali800" target="_blank" rel="noopener">متابعة البث</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 d-flex flex-column gap-4">
+                            <div class="glass-panel p-3 text-center">
+                                <img alt="Discord Community" src="assets/images/index/crafter-2.png" class="img-fluid mb-2" style="max-height: 120px; border-radius: 10px;"/>
+                                <h5 class="text-white fw-bold">ديسكورد ديد تاون</h5>
+                                <a class="btn-deadtown-primary btn-sm py-1 px-3 mt-1" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener">انضمام</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community & Features Section -->
+    <section id="facilities" class="py-5 position-relative">
+        <div class="facilities-bg">
+            <img alt="shapes" src="assets/images/index/shapes-bg.png"/>
+            <img alt="shapes" src="assets/images/index/shapes-bg.png"/>
+            <img alt="shapes" src="assets/images/index/shapes-bg.png"/>
+        </div>
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-uppercase fw-bold" style="color: #53FC18; letter-spacing: 2px;">ABOUT US</span>
+                <h2 class="display-6 fw-bold text-white mt-1">مجتمع سيرفر ديد تاون</h2>
+                <p class="text-muted mx-auto" style="max-width: 750px;">
+                    بيئة تفاعلية غنية تجمع بين اللاعبين والمؤثرين والإداريين لضمان تجربة رول بلاي عادلة وممتعة لا تُنسى.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Feature 1: About Us -->
+                <div class="col-md-4 col-sm-9 d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-panel p-4 w-100 text-center d-flex flex-column align-items-center justify-content-between">
+                        <div>
+                            <div class="p-3 rounded-circle mb-3 d-inline-flex" style="background: rgba(137,0,255,0.25); color: #A333FF;">
+                                <i class="fa-solid fa-info-circle fa-2x"></i>
+                            </div>
+                            <h4 class="text-white fw-bold mb-3">من نحن</h4>
+                            <p class="text-muted" style="line-height: 1.8;">
+                                "ديد تاون" هو سيرفر فايف إم عربي متخصص، تأسس ليقدم أرقى معايير الواقعية، السيناريوهات الاحترافية، والأنظمة البرمجية الحصرية.
+                            </p>
+                        </div>
+                        <a href="rules.html" class="btn-deadtown-outline btn-sm mt-3">اكتشف المزيد</a>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Rules -->
+                <div class="col-md-4 col-sm-9 d-flex" data-aos="fade-up" data-aos-delay="250">
+                    <div class="glass-panel p-4 w-100 text-center d-flex flex-column align-items-center justify-content-between">
+                        <div>
+                            <div class="p-3 rounded-circle mb-3 d-inline-flex" style="background: rgba(83,252,24,0.2); color: #53FC18;">
+                                <i class="fa-solid fa-scale-balanced fa-2x"></i>
+                            </div>
+                            <h4 class="text-white fw-bold mb-3">القوانين والعدالة</h4>
+                            <p class="text-muted" style="line-height: 1.8;">
+                                تهدف قوانين ديد تاون إلى صون حقوق الجميع، تنظيم قطاعات الشرطة والإسعاف والقضاء، وضمان أعلى درجات الانضباط والنزاهة.
+                            </p>
+                        </div>
+                        <a href="rules.html" class="btn-deadtown-primary btn-sm mt-3">الاطلاع على القوانين</a>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Support / Discord -->
+                <div class="col-md-4 col-sm-9 d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <div class="glass-panel p-4 w-100 text-center d-flex flex-column align-items-center justify-content-between">
+                        <div>
+                            <div class="p-3 rounded-circle mb-3 d-inline-flex" style="background: rgba(88,101,242,0.25); color: #5865F2;">
+                                <i class="fa-solid fa-headset fa-2x"></i>
+                            </div>
+                            <h4 class="text-white fw-bold mb-3">الدعم الفني والتواصل</h4>
+                            <p class="text-muted" style="line-height: 1.8;">
+                                فريق إداري ورقابي متاح على مدار الساعة عبر نظام التذاكر في ديسكورد لمساعدتك وحل أي استفسار أو بلاغ فوراً.
+                            </p>
+                        </div>
+                        <a href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener" class="btn-deadtown-outline btn-sm mt-3">الدخول إلى الديسكورد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="pt-5 pb-4 border-top" style="border-color: rgba(137,0,255,0.2) !important; background: #070412;">
+        <div class="container">
+            <div class="row g-4 align-items-center mb-4">
+                <div class="col-md-6 text-center text-md-start">
+                    <a href="index.html">
+                        <img alt="DeadTown Logo" src="assets/images/logo.png" style="height: 50px;" class="mb-3"/>
+                    </a>
+                    <p class="text-muted mb-0" style="max-width: 450px;">
+                        DeadTown - السيرفر العربي الأكبر لتجربة لعب واقعية متكاملة في عالم FiveM Roleplay.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a class="btn-deadtown-outline py-2 px-3" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener" aria-label="Discord">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                        <a class="btn-deadtown-outline py-2 px-3" href="https://kick.com/yazenali800" target="_blank" rel="noopener" aria-label="Kick">
+                            <i class="fa-solid fa-play text-success"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border-color: rgba(137,0,255,0.2);"/>
+
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-2">
+                <p class="text-muted small mb-0">حقوق الطبع والنشر © 2025 DeadTown. جميع الحقوق محفوظة.</p>
+                <div class="d-flex gap-4 mt-3 mt-md-0">
+                    <a href="index.html" class="text-muted small text-decoration-none">الرئيسية</a>
+                    <a href="rules.html" class="text-muted small text-decoration-none">القوانين</a>
+                    <a href="job-application.html" class="text-muted small text-decoration-none">الوظائف</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Back to Top Button -->
+<button class="btnTwo" id="backToTopBtn" type="button" aria-label="العودة للأعلى" style="display: none;">
+    <i class="fa-solid fa-arrow-turn-up"></i>
+</button>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

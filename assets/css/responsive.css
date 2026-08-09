@@ -1,0 +1,2117 @@
+/* ====================== RESPONSIVE SETTINGS ====================== */
+
+/* =========== All page Responsive =============== */
+
+@media all and (min-width: 1900px){
+    /* ======== index.html ======== */
+    #partner {
+        margin-top: 140px;
+    }
+    .overlay {
+        height: 766px;
+    }
+    .overlay {
+        top: -5%;
+    }
+}
+
+@media all and (min-width: 1400px){
+    /* ======== index.html ======== */
+    span.navbarBtn {
+        margin-right: 10px;
+        margin-left: 35px;
+    }
+    #playing p {
+        padding: 0 350px 45px 335px;
+    }
+    #facilities p {
+        padding: 20px 300px 50px 300px;
+    }
+    #upcoming p {
+        padding: 20px 300px 40px 300px;
+    }
+    .teamContent p {
+        padding: 20px 300px 30px 300px;
+    }
+    #pricing h1 {
+        top: -40px;
+        left: 0;
+    }
+    .price_card .globalBtn a {
+        padding: 10px 66px 10px 66px !important;
+    }
+
+    .price_card {
+        margin: 50px 0 0 20px;
+    }
+
+    .price_content p {
+        padding-right: 150px;
+    }
+    #media p {
+        padding: 15px 320px 20px 320px;
+    }
+    .faq_content p {
+        padding: 10px 250px 40px 250px;
+    }
+    .blog_content p {
+        padding: 20px 800px 50px 0;
+    }
+    /* ======== pricing.html ======== */
+    .price p{
+        padding: 0 320px 50px 320px;
+    }
+    .pricing h3{
+        padding: 0 250px 20px 250px !important;
+    }
+    /* ======== testimonials.html ======== */
+    .testimonial_content h3{
+        padding-right: 140px;
+    }
+    .testimonial_content p {
+        padding: 10px 155px 0 0;
+    }
+}
+
+@media all and (max-width: 1199px){
+    /* global grid setting */
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 1128px;
+    }
+    /* ======== index.html ======== */
+    .price_card .globalBtn a {
+        padding: 15px 40px !important;
+    }
+
+    #pricing .col-md-6:nth-child(3) {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .pricing-bg img {
+        display: none;
+    }
+    #pricing h1 {
+        top: -64px;
+        left: -120px;
+        transform: translateY(-65px);
+        padding: 0 250px;
+    }
+    .testimonials-slider {
+        padding: 0;
+    }
+
+    .testimonial_card {
+        padding: 50px 10px 30px 10px;
+    }
+
+    .testimonial_card p {
+        padding: 25px 60px 20px 60px;
+    }
+
+    #testimonials h3 {
+        padding: 30px 0 0 0;
+    }
+    .testimonialsPage-slider {
+        padding: 0 50px !important;
+    }
+    .list {
+        padding: 15px 5px 15px 11px;
+        border-left: none;
+    }
+    .discount-bg img:nth-child(1) {
+        display: none;
+    }
+    .discount-bg img:nth-child(6) {
+        display: none;
+    }
+    .discount-bg img:nth-child(2) {
+        top: -52px;
+        left: 148px;
+    }
+    .discount-bg img:nth-child(3) {
+        top: -40px;
+        left: 33%;
+    }
+    .discount-bg img:nth-child(5) {
+        top: -49px;
+        left: 72%;
+    }
+    /* ======== testimonials.html ======== */
+    .testimonial .content p {
+        padding: 20px 250px 40px 250px;
+    }
+    .testimonial .content h3 {
+        padding: 0 250px;
+    }
+    .testimonial_content{
+        padding-left: 50px;
+    }
+    /* ======== commingsoom.html / 404.html ======== */
+    .pg_content {
+        padding: 0 250px;
+    }
+}
+@media all and (min-width: 992px) {
+    /* ======== index.html ======== */
+    .navbar .dropdown-menu-end {
+        left: 0; /* Changed from left to right */
+        right: auto; /* Changed from right to left */
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #505050;
+    }
+
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 100% 0%; /* Changed transform-origin to match RTL */
+    }
+
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: .3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+        padding: 10px 0 10px 45px; /* Swapped padding-right and padding-left */
+    }
+}
+
+@media all and (max-width: 991px){
+    /* global grid setting */
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 925px;
+    }
+    /* ======== index.html ======== */
+    #playing p {
+        padding: 0 170px 45px 170px;
+    }
+
+    .players {
+        padding: 22px 20px 40px 20px;
+    }
+
+    img[alt="player"] {
+        width: 60px;
+    }
+    .player_logo {
+        height: 115px;
+        width: 115px;
+    }
+    .imgLeft h1 {
+        left: 0%;
+    }
+
+    .imgRight h1:nth-child(1) {
+        left: 5%;
+    }
+
+    .imgRight h1:last-child {
+        left: -74%;
+    }
+    #crafters .text-center{
+        padding: 0 150px;
+    }
+    #crafters .counter{
+        padding-right: 20px !important;
+    }
+    #facilities .col-md-4 {
+        padding: 0 10px !important;
+    }
+
+    .facilities-bg img:nth-child(3) {
+        display: none;
+    }
+
+    .facilities-bg img:nth-child(6) {
+        display: none;
+    }
+
+    .facilities-bg img:nth-child(4) {
+        left: 27%;
+    }
+    img[alt="gameLogo"] {
+        width: 110px;
+    }
+
+    .matches_buttons button {
+        padding: 14px 20px 14px 20px !important;
+    }
+
+    .match_date figure {
+        height: 100px;
+        width: 100px;
+    }
+
+    .match_date img[alt="player"] {
+        width: 55px;
+    }
+
+    .match_date img[alt="vs_2"] {
+        width: 40px;
+    }
+    #games p {
+        padding: 20px 120px 40px 120px;
+    }
+
+    .games {
+        background-size: cover;
+        padding: 20px 20px;
+    }
+
+    img[alt="csgo"] {
+        width: 140px;
+        transform: translateY(-2px);
+    }
+
+    img[alt="dota2"] {
+        width: 130px;
+        transform: translateY(14px);
+        margin-bottom: 17px;
+    }
+
+    img[alt="pubg"] {
+        width: 90px;
+        transform: translateY(12px);
+    }
+
+    img[alt="callofduty"] {
+        width: 165px;
+        transform: translateY(30px);
+        margin-bottom: 43px;
+    }
+
+    .tags a {
+        padding: 7px 16px !important;
+    }
+    #tournament {
+        padding: 70px 0;
+    }
+
+    #tournament .watch {
+        padding-right: 300px;
+    }
+
+    .watch_1 {
+        padding: 250px 20px 20px 15px;
+    }
+
+    .watch_2 {
+        padding: 202px 15px 20px 15px;
+    }
+
+    .watch_3 {
+        padding: 225px 15px 20px 15px;
+    }
+    .teamContent p {
+        padding: 15px 130px 25px 130px;
+    }
+
+    .team .gap-5 {
+        padding: 20px 0 10px 25px;
+    }
+
+    .team::before {
+        height: 75%;
+    }
+
+    #team h6 {
+        padding: 70px 0 10px 12px;
+    }
+
+    .team p {
+        padding-left: 12px !important;
+    }
+
+    .team .gap-lg-4 {
+        padding: 20px 0 10px 13px;
+    }
+    #pricing h1 {
+        padding: 0 200px;
+    }
+
+    .price_card.scnd {
+        margin-top: 150px;
+    }
+
+    .price_card {
+        border: 1px solid #2B2A65;
+        padding: 10px 15px 25px 15px;
+        margin: 40px 0 0 10px;
+    }
+
+    .price_card div {
+        gap: 7px;
+    }
+
+    .price_card .globalBtn a {
+        padding: 15px 30px !important;
+    }
+    #media p {
+        padding: 15px 180px 20px 180px;
+    }
+
+    #gallery_slider {
+        height: 40vw;
+        margin: 30px auto 75px auto;
+    }
+    .testimonial_card {
+        padding: 20px 10px 30px 10px;
+    }
+
+    #testimonials h3 {
+        padding: 0;
+    }
+
+    .testimonial_card p {
+        padding: 15px 20px 10px 20px;
+    }
+
+    #testimonials::before {
+        display: none;
+    }
+    #faq .col-lg-7 {
+        position: static;
+    }
+    #faq .video {
+        height: 100%;
+    }
+    .blog-card2 .news-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .blog_content p {
+        padding: 20px 300px 40px 0;
+    }
+    #footer h3 {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    #footer .social {
+        transform: translateY(0px);
+    }
+
+    #footer .col-sm-6 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer .col-sm-12 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer .col-lg-4 input {
+        width: 100%;
+    }
+
+    img[alt="footerLogo"] {
+        margin-bottom: 50px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+    }
+    .sub_footer p {
+        text-align: center;
+    }
+    /* ======== about.html ======== */
+    .video_content{
+        padding: 0 90px;
+    }
+    .testimonialsPage-slider {
+        padding: 0 !important;
+    }
+    .testimonials::before {
+        right: 51%;
+        top: -37%;
+    }
+    .testimonialsPage-slider .slick-next {
+        right: 16.6% !important;
+        bottom: 3%;
+    }
+    /* ======== pricing.html ======== */
+    .list {
+        padding: 15px 20px;
+        border-left: 1px solid #2B2A65;
+    }
+    .price p {
+        padding: 0 120px 40px 120px;
+    }
+    .pricing h3{
+        padding: 0 120px 20px 120px !important;
+    }
+    .pricing .price_card div {
+        justify-content: start !important;
+    }
+    .pricing .row {
+        position: relative;
+        padding: 0 5px;
+    }
+    .special {
+        padding: 0 190px;
+    }
+    .discount-bg img:nth-child(2) {
+        top: -60px;
+        left: 83px;
+    }
+    .discount-bg img:nth-child(3) {
+        top: -70px;
+        left: 30%;
+    }
+    .discount-bg img:nth-child(5) {
+        top: -58px;
+        left: 74%;
+    }
+    .discount-bg img:nth-child(4) {
+        top: -84px;
+    }
+    /* ======== testimonials.html ======== */
+    .testimonial .content p {
+        padding: 20px 130px 40px 130px;
+    }
+    .testimonial .content h3 {
+        padding: 0 130px;
+    }
+    .testimonial_content{
+        padding-left: 0;
+    }
+    .testimonialCards {
+        padding: 40px 45px;
+    }
+    /* ======== comingsoon.html / 404.html.html ======== */
+    .pg_content {
+        padding: 0 200px;
+    }
+}
+
+@media (max-width: 769px) and (min-width: 768px){
+    /* ======== index.html ======== */
+    #tournament .mt-md-4 {
+        padding: 0 7px;
+    }
+}
+
+@media all and (max-width: 768px){
+    /* global style */
+    h1 {
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 46px;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+    }
+
+    h4 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 14px 30px 14px 30px;
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        padding: 14px 30px 14px 30px !important;
+    }
+
+    /* Global buttons */
+    .btnTwoActive {
+        padding: 19px 26px 19px 26px !important;
+    }
+
+    .btnTwo {
+        padding: 19px 26px 19px 26px !important;
+    }
+    /* ======== index.html ======== */
+    .navbar-brand img {
+        width: 140px;
+    }
+    .navbar-toggler {
+        padding: 8px 13px;
+    }
+    .navbar-toggler i {
+        font-size: 26px;
+    }
+    .sidebar img {
+        width: 135px;
+    }
+    .sidebar button {
+        padding: 5px 12px;
+    }
+    .sidebar {
+        padding: 20px 0;
+    }
+    #hero {
+        padding: 90px 0 0 0;
+        margin-top: 40px;
+        transform: translateY(28px);
+    }
+
+    .hero h2{
+        padding-top: 30px;
+    }
+    .hero_main {
+        height: 540px;
+    }
+
+    .overlay {
+        height: 577px;
+    }
+    .partner-slider img {
+        width: 40px;
+    }
+    #partner {
+        padding: 30px 0;
+        margin-top: 116px;
+    }
+    #playing h4 {
+        padding: 12px 0 10px 0;
+    }
+    #playing {
+        padding: 70px 0 70px 0;
+    }
+
+    #playing p {
+        padding: 0 110px 45px 110px;
+    }
+
+    .player_logo {
+        height: 105px;
+        width: 105px;
+    }
+    img[alt="playLogo"] {
+        width: 120px;
+        left: 34%;
+        margin-bottom: 25px;
+    }
+    .imgRight h1:nth-child(1) {
+        top: 31%;
+    }
+
+    #crafters p {
+        padding: 15px 26px 25px 0;
+    }
+
+    #crafters {
+        padding: 70px 0;
+    }
+
+    #crafters p {
+        padding: 10px 26px 15px 0;
+    }
+    #crafters .text-center{
+        padding: 0 100px;
+    }
+    #facilities {
+        margin: 70px 0;
+    }
+
+    #facilities p {
+        padding: 10px 120px 40px 120px;
+    }
+
+    .facilities-bg img {
+        width: 165px;
+    }
+
+    .facilities-bg img:nth-child(1) {
+        top: 55px;
+    }
+
+    .facilities-bg img:nth-child(8) {
+        top: 55px;
+        right: 30px;
+    }
+    img[alt="facilitiesIcon"] {
+        width: 50px;
+    }
+    img[alt="facilitiesIcon_2"] {
+        width: 66px;
+    }
+    img[alt="facilitiesIcon_3"] {
+        width: 62px;
+    }
+    #upcoming {
+        padding: 70px 0;
+    }
+
+    #upcoming p {
+        padding: 10px 110px 30px 110px;
+    }
+
+    img[alt="gameLogo"] {
+        width: 100px;
+    }
+
+    .match_date figure {
+        height: 90px;
+        width: 90px;
+    }
+
+    .match_date {
+        padding: 40px 10px 0 10px;
+    }
+    #games {
+        padding: 70px 0;
+    }
+
+    #games p {
+        padding: 10px 120px 30px 120px;
+    }
+    .game{
+        padding: 0 0 70px 0 !important;
+    }
+    #tournament .watch {
+        padding-right: 200px;
+    }
+    #tournament .watch p {
+        padding: 10px 0 30px 0;
+    }
+    .watch_1 {
+        padding: 153px 20px 20px 15px;
+    }
+    .watch_1 p {
+        padding: 15px 10px 15px 0;
+    }
+    .watch_2 {
+        padding: 150px 15px 20px 15px;
+    }
+
+    .watch_3 {
+        padding: 150px 15px 20px 15px;
+    }
+
+    .watch_4,
+    .watch_5,
+    .watch_6 {
+        padding: 100px 15px 20px 15px;
+    }
+    .teamContent p {
+        padding: 10px 130px 0 130px;
+    }
+    #team {
+        padding: 70px 0;
+    }
+    #join .join_cont {
+        padding: 70px 0 50px 40px;
+    }
+
+    #join {
+        padding: 70px 0;
+    }
+
+    .video-play-button {
+        border: none;
+    }
+    #pricing h1 {
+        top: -50px;
+    }
+    #pricing h3 {
+        padding: 70px 0 10px 0;
+    }
+
+    #pricing {
+        padding: 70px 0;
+    }
+    #pricing .col-md-6:nth-child(3) {
+        padding-left: 18px;
+        padding-right: 20px;
+    }
+    #media {
+        padding: 70px 0;
+    }
+
+    #media p {
+        padding: 10px 100px 20px 100px;
+    }
+
+    #gallery_slider {
+        height: 45vw;
+        margin: 20px auto 75px auto;
+    }
+
+    input[type=radio] {
+        width: 15px;
+        height: 15px;
+    }
+
+    input[type='radio']:checked:after {
+        width: 14px;
+        height: 13px;
+    }
+    .slick-prev {
+        left: 39.4% !important;
+    }
+
+    .slick-next {
+        right: 40.6% !important;
+    }
+
+    .testimonial_card p {
+        padding: 15px 0 10px 0;
+    }
+    #faq {
+        padding: 70px 0;
+    }
+
+    .faq_content p {
+        padding: 10px 100px 40px 100px;
+    }
+    #faq .accordion-button:not(.collapsed) {
+        font-size: 16px;
+    }
+    #faq .accordion-button {
+        font-size: 16px;
+    }
+    .blog {
+        padding: 70px 0px;
+    }
+    .blog_content p {
+        padding: 10px 300px 35px 0;
+    }
+    img[alt="footerLogo"] {
+        width: 170px;
+        margin-bottom: 25px;
+    }
+    #footer i {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+    }
+    #footer-message {
+        width: 58%;
+        padding: 45px 0;
+        font-size: 25px;
+    }
+    #footer .globalBtn{
+        justify-content: center;
+    }
+    /* ======== about.html ======== */
+    .hero_about::before{
+        background-attachment: scroll;
+    }
+    .hero .d-flex{
+        flex-direction: row !important;
+    }
+    .breadcrumb-item {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .breadcrumb-item a {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 0 4px !important;
+    }
+    #video{
+        padding: 100px 0;
+    }
+    #video::before{
+        background-attachment: scroll;
+    }
+    .testimonials {
+        padding: 70px 0;
+    }
+
+    .testimonials::before {
+        right: 46%;
+        top: -41%;
+    }
+    .testimonialCard {
+        display: flex;
+        padding: 30px 30px 90px 30px;
+    }
+    .testimonialsPage-slider .slick-prev {
+        left: 63.4% !important;
+    }
+    #details{
+        padding: 0 0 20px 0;
+        transform: translateY(-28.5%);
+    }
+    #contact {
+        padding-bottom: 70px;
+    }
+    #contact p {
+        padding: 20px 36px 0 0;
+    }
+    #contact h3 {
+        padding-right: 40px;
+    }
+    #contact input {
+        font-size: 16px;
+    }
+    .msg textarea{
+        font-size: 16px;
+    }
+    #location{
+        padding-bottom: 70px;
+    }
+    #location h3{
+        text-align: center;
+    }
+    /* ======== pricing.html ======== */
+    .price p {
+        padding: 0 90px 30px 90px;
+    }
+    .pricing h3{
+        padding: 0 90px 20px 90px !important;
+    }
+    #discount h1 {
+        bottom: -38px;
+    }
+    #discount .container {
+        padding: 70px 0;
+    }
+    #discount{
+        padding-bottom: 100px;
+    }
+    .special {
+        padding: 0 175px;
+    }
+    .discount-bg img:nth-child(2) {
+        display: none;
+    }
+    .discount-bg img:nth-child(5) {
+        display: none;
+    }
+    .discount-bg img:nth-child(4) {
+        left: 53%;
+    }
+    .discount-bg img:nth-child(3) {
+        top: -70px;
+        left: 25%;
+    }
+    /* ======== testimonials.html ======== */
+    .testimonial {
+        padding: 70px 0;
+    }
+    .testimonialCards {
+        padding: 30px 35px;
+    }
+    .testimonial_content h3 {
+        padding-right: 25px;
+    }
+    .testimonial_content p {
+        padding: 10px 25px 0 0;
+    }
+    /* ======== comingsoon.html / 404.html ======== */
+    .pg_content {
+        padding: 0 150px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    /* ======== index.html ======== */
+    .blog .col-lg-5 {
+        width: 37.666667%;
+    }
+
+    .blog .col-md-8 {
+        width: 64%;
+    }
+}
+
+@media all and (max-width: 767px){
+    /* ======== index.html ======== */
+    #partner {
+        margin-top: 100px;
+    }
+    .players {
+        padding: 22px 50px 40px 50px;
+    }
+    #crafters h3 {
+        text-align: center;
+        padding: 0 80px;
+    }
+
+    #crafters p {
+        padding: 10px 80px 15px 80px;
+        text-align: center;
+    }
+    #crafters .counter{
+        padding-right: 0 !important;
+    }
+    #crafters .glow-on-hover {
+        margin-bottom: 60px;
+    }
+
+    .imgLeft h1 {
+        left: 26%;
+        top: -8%;
+    }
+
+    .imgRight h1:nth-child(1) {
+        top: 40%;
+        left: 29%;
+    }
+
+    .imgRight h1:last-child {
+        left: -35%;
+        bottom: -2%;
+    }
+    #crafters .text-center{
+        padding: 0 80px;
+    }
+    #facilities p {
+        padding: 20px 120px 20px 120px;
+    }
+
+    #facilities {
+        margin: 50px 0;
+    }
+    img[alt="gameLogo"] {
+        width: 110px;
+    }
+
+    .match_date .match_card {
+        padding: 25px 30px;
+    }
+
+    .matches button {
+        width: unset;
+    }
+
+    .matches_buttons {
+        flex-wrap: wrap;
+    }
+    #games {
+        padding: 50px 0;
+    }
+
+    #games p {
+        padding: 20px 80px 30px 80px;
+    }
+
+    .games {
+        padding: 30px 30px 30px 30px;
+    }
+    .game{
+        padding: 0 0 50px 0 !important;
+    }
+    #tournament {
+        padding: 50px 0;
+    }
+
+    #tournament .watch {
+        padding-right: 0;
+    }
+
+    #tournament h3 {
+        text-align: center;
+    }
+
+    #tournament .watch p {
+        text-align: center;
+        padding: 10px 60px 30px 60px;
+    }
+
+    .watch_match {
+        width: 100%;
+    }
+
+    #tournament h5 {
+        text-align: center;
+    }
+
+    .watch_match p {
+        text-align: center;
+    }
+
+    .watch_1 p {
+        padding: 15px 0;
+    }
+
+    .watch_4,
+    .watch_5,
+    .watch_6 {
+        padding: 150px 15px 20px 15px;
+    }
+    #team .col-md-4 {
+        justify-content: center;
+    }
+    .teamContent p {
+        padding: 10px 130px 25px 130px;
+    }
+    #team {
+        padding: 50px 0;
+    }
+    #join {
+        padding: 50px 0;
+    }
+
+    .join_img {
+        padding: 150px 0;
+    }
+
+    #join .join_cont {
+        text-align: center;
+        padding: 50px 20px 40px 20px;
+    }
+
+    #join p {
+        color: #BFBFBF;
+        padding: 15px 0 30px 0;
+    }
+    #pricing {
+        padding: 50px 0;
+    }
+
+    #pricing h1 {
+        top: -27px;
+        left: -4px;
+        transform: translateY(-20px);
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    #pricing h3 {
+        text-align: center;
+        padding: 40px 0 20px 0;
+    }
+
+    #pricing p {
+        text-align: center;
+        padding: 0 80px;
+    }
+
+    #pricing .col-md-6:nth-child(3) {
+        padding: 0 20px 0 10px;
+    }
+
+    .price_card div {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .price_card p {
+        text-align: left !important;
+        padding: 0 !important;
+    }
+
+    .price_card.scnd {
+        margin-top: 0px;
+    }
+    #media {
+        padding: 50px 0;
+    }
+
+    #media p {
+        padding: 10px 100px 20px 100px;
+    }
+    #testimonials h3 {
+        padding: 40px 0 0 0;
+    }
+    #testimonials {
+        padding: 50px 0;
+    }
+    #faq {
+        padding: 50px 0;
+    }
+
+    .faq_content p {
+        padding: 10px 70px 40px 70px;
+    }
+    .blog h3 {
+        text-align: center;
+    }
+
+    .blog_content p {
+        padding: 20px 130px 30px 130px;
+        text-align: center;
+    }
+
+    .blog-card2 .blog-text {
+        padding: 25px 0 0 0;
+    }
+
+    .blog .blog-card {
+        padding: 15px;
+    }
+
+    .blog .row {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .blog .blog-card2 {
+        background: #070929;
+        padding: 15px !important;
+    }
+    #footer .globalBtn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #footer ul{
+        width: 100%;
+    }
+    #footer h3 {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    #footer .col-lg-2 a {
+        padding: 7px 0 !important;
+        color: #E3ECE7;
+    }
+    /* ======== testimonials.html ======== */
+    .testimonials {
+        padding: 50px 0;
+    }
+    /* ======== contact.html ======== */
+    .hero_contact::before{
+        background-attachment: scroll;
+    }
+    #details{
+        padding: 50px 0 ;
+        transform: translateY(0);
+    }
+    #contact {
+        padding-bottom: 50px;
+    }
+    #contact p {
+        padding: 20px 20px 30px 20px;
+        text-align: center;
+    }
+    #contact h3 {
+        padding-right: 0;
+        text-align: center;
+    }
+    #contact form{
+        padding: 0 25px;
+    }
+    #contact input {
+        padding: 14px 16px 16px 22px;
+    }
+    .msg textarea{
+        padding: 16px 16px 20px 22px;
+    }
+    #location{
+        padding-bottom: 50px;
+    }
+    /* ======== pricing.html ======== */
+    .price p {
+        padding: 0 90px 30px 90px !important;
+    }
+    .pricing .price_card {
+        width: 100%;
+    }
+    .list{
+        width: 100%;
+    }
+    .list p{
+        padding: 0 !important;
+        text-align: left !important;
+    }
+    .list div {
+        justify-content: flex-start !important;
+    }
+    .list {
+        padding: 20px 20px;
+    }
+    .special {
+        padding: 0 160px;
+    }
+    #discount h1 {
+        bottom: -40px;
+    }
+    .discount-bg img {
+        width: 170px;
+    }
+    /* ======== testimonials.html ======== */
+    .testimonial .content p {
+        padding: 20px 100px 40px 100px;
+    }
+    .testimonial .content h3 {
+        padding: 0 100px;
+    }
+    .testimonial {
+        padding: 50px 0;
+    }
+    .testimonialCards h5 {
+        text-align: center;
+    }
+
+    .testimonialCards p {
+        padding: 20px 0 30px 0;
+        text-align: center;
+    }
+    .testimonialCards h6 {
+        text-align: center;
+        padding: 10px 0 12px 0;
+    }
+    .testimonial_content h3 {
+        text-align: center;
+        padding: 0;
+    }
+    .testimonial_content p {
+        text-align: center;
+        padding: 10px 100px 0 100px;
+    }
+    .testimonialCard {
+        margin-top: 40px;
+    }
+    .testimonialsPage-slider .slick-prev {
+        left: 71.4% !important;
+    }
+    .testimonials::before {
+        left: -90%;
+        top: -13%;
+    }
+    /* ======== comingsoon.html / 404.html ======== */
+    .pg_content {
+        padding: 0 70px;
+    }
+    .pg p{
+        padding: 15px 0 30px 0;
+    }
+}
+
+@media all and (max-width: 608px){
+    /* ======== pricing.html ======== */
+    #discount h1 {
+        bottom: -86px;
+        left: 30%;
+    }
+    .special {
+        padding: 0 66px;
+    }
+}
+
+@media all and (max-width: 575px){
+    /* ======== index.html ======== */
+    #playing p {
+        padding: 0 50px 45px 50px;
+    }
+    #crafters h3 {
+        padding: 0 50px;
+    }
+
+    #crafters p {
+        padding: 10px 50px 15px 50px;
+    }
+
+    #crafters .glow-on-hover {
+        margin-bottom: 33px;
+    }
+
+    .imgLeft h1 {
+        left: 35%;
+        top: -5%;
+    }
+
+    .counter h3 {
+        padding: 0 !important;
+    }
+
+    .imgRight h1:nth-child(1) {
+        top: 43%;
+        left: 39%;
+    }
+
+    .imgRight h1:last-child {
+        left: 30%;
+        bottom: -4%;
+    }
+    #crafters .text-center{
+        padding: 0 50px;
+    }
+    #crafters .text-center h3{
+        padding: 0;
+    }
+    .teamContent p {
+        padding: 15px 20px 20px 20px;
+    }
+}
+
+@media all and (max-width: 480px){
+    /* global style */
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 48px;
+    }
+
+    h2 {
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    h6 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    button {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 12px 32px 12px 32px;
+    }
+
+    a {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 12px 26px 12px 26px !important;
+    }
+
+    /* === button back to top ====*/
+     #backToTopBtn {
+        padding: 13px 17px !important;
+    }
+    /* Global buttons start */
+     .btnTwoActive {
+        padding: 19px 26px 19px 26px !important;
+    }
+
+    .btnTwo {
+        padding: 19px 22px 19px 22px !important;
+    }
+    /* ======== index.html ======== */
+    .navbar-brand img {
+        width: 100px;
+    }
+    .navbar-toggler {
+        padding: 7px 11px;
+    }
+    .navbar-toggler i {
+        font-size: 24px;
+    }
+    #hero {
+        padding: 70px 0 0 0;
+        margin-top: 0;
+        transform: translateY(120px);
+    }
+
+    .hero_main {
+        height: 517px;
+    }
+    .overlay {
+        height: 553px;
+    }
+    #hero h4 {
+        padding: 15px 0;
+    }
+    .hero h2{
+        padding-top: 0;
+    }
+    .hero {
+        margin-top: 0 !important;
+        padding-top: 30px !important;
+    }
+    #partner {
+        margin-top: 208px;
+        padding: 22px 0;
+    }
+    .partner-slider img {
+        width: 35px;
+    }
+    #playing {
+        padding: 50px 0;
+    }
+
+    #playing p {
+        padding: 0 10px 45px 10px;
+    }
+
+    .players {
+        padding: 22px 20px 35px 20px;
+    }
+
+    img[alt="playLogo"] {
+        width: 115px;
+        bottom: 0%;
+        margin-bottom: 25px;
+    }
+
+    img[alt="player"] {
+        width: 50px;
+    }
+
+    img[alt="vs"] {
+        width: 40px;
+        padding-bottom: 26px;
+    }
+
+    .p-name {
+        padding: 0 15px;
+    }
+
+    .player_logo {
+        height: 90px;
+        width: 90px;
+    }
+    .p-name h6 {
+        padding-top: 14px;
+    }
+    #crafters::before {
+        background-attachment: scroll;
+    }
+    #crafters {
+        padding: 50px 0;
+    }
+
+    #crafters h3 {
+        padding: 0 30px;
+    }
+
+    #crafters p {
+        padding: 10px 30px 10px 30px;
+    }
+
+    #crafters .glow-on-hover {
+        margin-bottom: 20px;
+    }
+
+    .imgLeft h1 {
+        left: 39%;
+        top: -3%;
+    }
+
+    .imgRight h1:nth-child(1) {
+        top: 43%;
+        left: 39%;
+    }
+
+    .imgRight h1:last-child {
+        left: 35%;
+        bottom: -3%;
+    }
+    #crafters .text-center{
+        padding: 0 30px;
+    }
+    #crafters .text-center h3{
+        padding: 0;
+    }
+    #facilities p {
+        padding: 20px 30px 20px 30px;
+    }
+
+    #facilities .col-md-4 p {
+        padding: 25px 18px 10px 18px !important;
+    }
+
+    #facilities .col-md-4 div {
+        padding: 45px 10px 25px 10px;
+    }
+
+    .facilities-bg img {
+        width: 115px;
+    }
+
+    .facilities-bg img:nth-child(1) {
+        display: none;
+    }
+
+    .facilities-bg img:nth-child(8) {
+        display: none;
+    }
+
+    .facilities-bg img:nth-child(2) {
+        display: none;
+    }
+
+    .facilities-bg img:nth-child(7) {
+        display: none;
+    }
+
+    .facilities-bg img:nth-child(4) {
+        left: 10%;
+        top: -57px;
+    }
+
+    .facilities-bg img:nth-child(5) {
+        top: -57px;
+        left: 60%;
+    }
+    #upcoming {
+        padding: 50px 0;
+    }
+
+    #upcoming p {
+        padding: 10px 30px 20px 30px;
+    }
+
+    .match_date {
+        padding: 30px 10px 0 10px;
+    }
+    .matches_buttons button {
+        padding: 14px 13px 14px 13px !important;
+    }
+    #games h3 {
+        padding: 0 35px;
+    }
+
+    #games p {
+        padding: 20px 30px 30px 30px;
+    }
+
+    .games {
+        padding: 20px 20px;
+    }
+
+    img[alt="csgo"] {
+        width: 120px;
+        transform: translateY(-14px);
+    }
+
+    img[alt="dota2"] {
+        width: 110px;
+    }
+
+    img[alt="callofduty"] {
+        width: 150px;
+        transform: translateY(14px);
+        margin-bottom: 35px;
+    }
+    #tournament .watch p {
+        padding: 10px 20px 30px 20px;
+    }
+    #tournament::before{
+        background-attachment: scroll;
+    }
+    .team::before {
+        height: 65%;
+    }
+    #join::before {
+        background-attachment: scroll;
+    }
+    #pricing p {
+        padding: 0 20px;
+    }
+    .price_card {
+        padding: 10px 25px 25px 25px;
+    }
+    .price_card div {
+        gap: 16px;
+    }
+    .price_card h2 {
+        padding-bottom: 18px;
+    }
+    .price_card h5 {
+        padding: 10px 0 20px 0;
+    }
+    #media p {
+        padding: 10px 20px 20px 20px;
+    }
+
+    #gallery_slider {
+        width: 55%;
+        height: 50vw;
+        margin: 10px auto 55px auto;
+    }
+
+    input[type=radio] {
+        width: 13px;
+        height: 13px;
+        margin: 0 0 0 15px;
+    }
+
+    input[type='radio']:checked:after {
+        width: 13px;
+        height: 12px;
+        top: 0;
+    }
+    .faq_content p {
+        padding: 10px 20px 30px 20px;
+    }
+
+    .faq_container .accordion {
+        padding: 30px 0 20px 0;
+    }
+
+    .faq_container i {
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    #faq .accordion-button:not(.collapsed)::after {
+        width: 18px;
+    }
+
+    #faq .accordion-button::after {
+        width: 15px;
+        height: 15px;
+    }
+
+    .accordion-body {
+        padding: 0 1.25rem 1.25rem 2rem;
+    }
+
+    #faq .accordion-button {
+        font-size: 16px;
+        padding: 1rem 1.125rem;
+    }
+    .blog_content p {
+        padding: 20px 20px 30px 20px;
+    }
+
+    .blog {
+        padding: 50px 0px;
+    }
+    #footer i {
+        height: 36px;
+        width: 36px;
+        font-size: 18px;
+    }
+    #footer-message {
+        width: 80%;
+        right: 10%;
+        font-size: 25px;
+        padding: 45px 0;
+    }
+    #footer button{
+        width: 100%;
+    }
+    #footer .col-lg-4 h5 {
+    text-align: center;
+    }
+    /* ======== about.html ======== */
+    .video_content {
+        padding: 0 30px;
+    }
+    #video {
+        padding: 70px 0;
+    }
+    /* ======== contact.html ======== */
+    #contact p {
+        padding: 20px 10px 30px 10px;
+        text-align: center;
+    }
+    #contact label {
+        font-size: 16px;
+    }
+    #contact form {
+        padding: 0 10px;
+    }
+    /* ======== pricing.html ======== */
+    .price p {
+        padding: 0 20px 20px 20px !important;
+    }
+    .pricing h3{
+        padding: 0 0 20px 0 !important;
+    }
+    #discount .container {
+        padding: 50px 0;
+    }
+    .special {
+        padding: 0 30px;
+    }
+    #discount h1 {
+        bottom: -24px;
+        left: 22%;
+    }
+    #discount {
+        padding-bottom: 80px;
+    }
+    .discount-bg img {
+        width: 150px;
+    }
+    /* ======== testimonials.html ======== */
+    .testimonial .content h3 {
+        padding: 0 30px;
+    }
+    .testimonial .content p {
+        padding: 20px 30px 40px 30px;
+    }
+    .testimonial_content p {
+        padding: 10px 30px 10px 30px;
+    }
+    .testimonialCard p {
+        padding: 5px 0 30px 0;
+    }
+    .testimonialCard {
+        padding: 30px 30px 60px 30px;
+    }
+    .testimonialsPage-slider .slick-prev {
+        left: 65.4% !important;
+    }
+    .testimonials::before {
+        left: -82%;
+        top: -10%;
+    }
+    /* ======== comingsoon.html / 404.html ======== */
+    .pg_content {
+        padding: 0 30px;
+    }
+    .pg p{
+        padding: 15px 0 25px 0;
+    }
+}
+
+@media all and (max-width: 377px){
+    /* ======== index.html ======== */
+    #hero .d-flex {
+        flex-direction: column;
+        gap: 0.5rem !important;
+    }
+    #hero .btnTwoActive {
+        margin: 0 50px;
+    }
+    #hero .btnTwo {
+        margin: 0 50px;
+    }
+    #hero {
+        padding: 40px 0 0 0;
+        transform: translateY(100px);
+    }
+    .hero_main {
+        height: 543px;
+    }
+    .overlay {
+        height: 570px;
+    }
+    #partner {
+        margin-top: 153px;
+        padding: 22px 0;
+    }
+    /* ======== pricing.html ======== */
+    #discount h1 {
+        bottom: -25px;
+        left: 13%;
+    }
+    .discount-bg img:nth-child(3) {
+        top: -70px;
+        left: 18%;
+    }
+    .discount-bg img:nth-child(4) {
+        left: 51%;
+    }
+    .discount-bg img {
+        width: 120px;
+    }
+}
+
+@media all and (max-width: 360px){
+    /* ======== index.html ======== */
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .sidebar {
+        width: 265px;
+    }
+    .sidebar img {
+        width: 120px;
+    }
+    #hero {
+        padding: 40px 0 0 0;
+    }
+    #hero .d-flex {
+        flex-direction: column;
+        gap: 0.5rem !important;
+    }
+    #hero .btnTwoActive {
+        margin: 0 50px;
+    }
+    #hero .btnTwo {
+        margin: 0 50px;
+    }
+    .players {
+        padding: 22px 15px 30px 15px;
+    }
+
+    img[alt="playLogo"] {
+        width: 100px;
+        bottom: 0%;
+        left: 37%;
+        margin-bottom: 16px;
+    }
+
+    .p-name {
+        padding: 0;
+    }
+
+    #playing ul{
+        padding: 24px 0 5px 0;
+    }
+    #crafters p {
+        padding: 10px 0 20px 0;
+    }
+    #crafters h3{
+        padding: 0;
+    }
+    .counter hr {
+        display: none;
+    }
+
+    #crafters .glow-on-hover {
+        margin-top: 1rem !important;
+        margin-bottom: 10px;
+    }
+
+    .imgLeft h1 {
+        left: 33%;
+        top: -5%;
+    }
+
+    .imgRight h1:nth-child(1) {
+        top: 41%;
+        left: 37%;
+    }
+
+    .imgRight h1:last-child {
+        left: 27%;
+        bottom: -3%;
+    }
+    #crafters .text-center{
+        padding: 0;
+    }
+    #facilities p {
+        padding: 15px 10px 15px 10px;
+    }
+
+    .facilities-bg img {
+        width: 100px;
+    }
+    #upcoming p {
+        padding: 10px 5px 20px 5px;
+    }
+
+    .match_date figure {
+        height: 80px;
+        width: 80px;
+    }
+
+    .match_date img[alt="vs_2"] {
+        padding-bottom: 20px;
+    }
+
+    .match_date img[alt="player"] {
+        width: 50px;
+    }
+
+    .match_date img[alt="vs_2"] {
+        width: 35px;
+    }
+
+    .match_date .match_card {
+        padding: 20px 30px;
+    }
+
+    .match_date .col-md-5 div:first-child {
+        justify-content: space-between !important;
+    }
+
+    .match_card .col-md-5 {
+        padding: 0;
+    }
+    #games h3 {
+        padding: 0;
+    }
+
+    #games p {
+        padding: 15px 10px 20px 10px;
+    }
+
+    .games {
+        padding: 20px 10px 20px 10px;
+    }
+
+    .games p {
+        padding: 0 0 25px 0 !important;
+    }
+
+    img[alt="csgo"] {
+        width: 110px;
+        transform: translateY(8px);
+        margin-bottom: 16px;
+    }
+
+    img[alt="dota2"] {
+        width: 100px;
+        transform: translateY(10px);
+        margin-bottom: 20px;
+    }
+
+    img[alt="pubg"] {
+        width: 90px;
+        transform: translateY(10px);
+        margin-bottom: 25px;
+    }
+
+    img[alt="callofduty"] {
+        width: 130px;
+        transform: translateY(12px);
+        margin-bottom: 25px;
+    }
+
+    .watch_match p {
+        padding: 15px 10px;
+    }
+    .teamContent p {
+        padding: 15px 5px 15px 5px;
+    }
+    #media p {
+        padding: 10px 5px;
+    }
+
+    #gallery_slider {
+        width: 60%;
+        height: 55vw;
+        margin: 10px auto 50px auto;
+    }
+
+    input[type=radio] {
+        width: 13px;
+        height: 13px;
+        margin: 0 0 0 10px;
+    }
+    .slick-prev {
+        left: 36.4% !important;
+    }
+
+    .slick-next {
+        right: 37.6% !important;
+    }
+    #faq .accordion-button {
+        font-size: 14px;
+    }
+    #footer-message {
+        font-size: 20px;
+        width: 90%;
+        right: 5%;
+    }
+    #footer .btnOne{
+    margin-bottom: 22px;
+    }
+    /* ======== about.html ======== */
+    .video_content {
+        padding: 0 20px;
+    }
+    #video h6 {
+        padding: 12px 0 5px 0;
+    }
+    .testimonialsPage-slider .slick-next {
+        bottom: 5% !important;
+    }
+    .testimonialsPage-slider .slick-prev {
+        bottom: 5% !important;
+    }
+    /* ======== testimonials.html ======== */
+    .testimonial .content h3 {
+        padding: 0 10px;
+    }
+    .testimonial .content p {
+        padding: 20px 10px 40px 10px;
+    }
+    .testimonial_content p {
+        padding: 10px 10px 10px 10px;
+    }
+    .testimonialsPage-slider .slick-prev {
+        left: 60.4% !important;
+    }
+    .testimonials::before {
+        left: -77%;
+        top: -11%;
+    }
+    .testimonialCards {
+        padding: 30px 25px;
+    }
+    /* ======== comingsoon.html / 404.html ======== */
+    .pg .gap-md-4{
+        flex-direction: column;
+    }
+    .pg a{
+        text-align: center;
+    }
+    .pg .btnTwoActive{
+        margin: 0 40px;
+    }
+    .pg .btnTwo{
+        margin: 0 40px;
+    }
+}
+
+@media all and (max-width: 316px){
+    /* ======== index.html ======== */
+    .hero_main {
+        height: 582px;
+    }
+    .overlay {
+        height: 608px;
+    }
+}

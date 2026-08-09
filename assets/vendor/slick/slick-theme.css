@@ -1,0 +1,184 @@
+@charset 'UTF-8';
+
+/* Slider */
+.m1shal-loading .m1shal-list {
+    background: #fff url('ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/slick.eot');
+    src: url('fonts/slick.eot@') format('embedded-opentype'),
+         url('fonts/slick.woff') format('woff'),
+         url('fonts/slick.ttf') format('truetype'),
+         url('fonts/slick.svg') format('svg');
+}
+
+/* Arrows */
+.m1shal-prev,
+.m1shal-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;  /* Same width and height for a perfect circle */
+    height: 55px;  /* Same width and height for a perfect circle */
+    border-radius: 50%;  /* Ensure the button is circular */
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background-color: #7B3DE8;  /* Background color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Modern shadow effect */
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .m1shal-prev,
+    .m1shal-next {
+        display:none !important;  /* Hide arrows on smaller screens */
+
+    }
+}
+
+@media (max-width: 480px) {
+    .m1shal-prev,
+    .m1shal-next {
+        display:none  !important;  /* Hide arrows on smaller screens */
+    }
+}
+.m1shal-prev:hover,
+.m1shal-next:hover {
+    background-color: #5E1E96;  /* Darken background on hover */
+}
+
+.m1shal-prev.m1shal-disabled:before,
+.m1shal-next.m1shal-disabled:before {
+    opacity: .25;
+}
+
+/* Use FontAwesome icons for arrows */
+.m1shal-prev:before,
+.m1shal-next:before {
+    font-family: "Font Awesome 5 Free";  /* Set FontAwesome font family */
+    font-weight: 900;  /* Ensure proper FontAwesome weight */
+    font-size: 24px;  /* Adjust icon size */
+    color: white;
+    opacity: 1;
+}
+
+/* Position and content for left and right arrows */
+.m1shal-prev {
+    left: -30px;  /* Adjust position for better spacing */
+}
+
+[dir='rtl'] .m1shal-prev {
+    right: -30px;
+    left: auto;
+}
+
+.m1shal-prev:before {
+    content: '\f104';  /* FontAwesome left arrow */
+}
+
+[dir='rtl'] .m1shal-prev:before {
+    content: '\f105';  /* FontAwesome right arrow for RTL */
+}
+
+.m1shal-next {
+    right: -30px;  /* Adjust position */
+}
+
+[dir='rtl'] .m1shal-next {
+    right: auto;
+    left: -30px;
+}
+
+.m1shal-next:before {
+    content: '\f105';  /* FontAwesome right arrow */
+}
+
+[dir='rtl'] .m1shal-next:before {
+    content: '\f104';  /* FontAwesome left arrow for RTL */
+}
+
+/* Dots */
+.m1shal-dotted.m1shal-slider {
+    margin-bottom: 30px;
+}
+
+.m1shal-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.m1shal-dots li {
+    position: relative;
+    display: inline-block;
+    width: 12px;  /* Adjust dot size */
+    height: 12px;  /* Adjust dot size */
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.m1shal-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 12px;  /* Adjust button size */
+    height: 12px;  /* Adjust button size */
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.m1shal-dots li button:hover,
+.m1shal-dots li button:focus {
+    outline: none;
+}
+
+.m1shal-dots li button:hover:before,
+.m1shal-dots li button:focus:before {
+    opacity: 1;
+}
+
+.m1shal-dots li button:before {
+    font-family: 'slick';
+    font-size: 12px;  /* Adjust dot size */
+    line-height: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    content: '•';  /* Dot symbol */
+    text-align: center;
+    opacity: 0.5;
+    color: #7B3DE8;  /* Set dot color */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.m1shal-dots li.m1shal-active button:before {
+    opacity: 1;
+    color: #7B3DE8;  /* Highlight active dot */
+}
