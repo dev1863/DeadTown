@@ -11,6 +11,7 @@ if %ERRORLEVEL% EQU 0 (
     echo [✓] تم العثور على Node.js
     echo [✓] بدء تشغيل الخادم المحلي على المنفذ 3000...
     start "" http://localhost:3000
+    start "DeadTown Bot" /min cmd /k "cd /d %~dp0 && node bot-presence.js"
     node server.js
 ) else (
     echo [!] Node.js غير مثبت، جارٍ فتح الموقع مباشرة في المتصفح...

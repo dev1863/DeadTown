@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "bot": "node bot-presence.js",
+    "start:all": "start \"DeadTown Server\" cmd /k \"node server.js\" && start \"DeadTown Bot\" cmd /k \"node bot-presence.js\""
   },
   "keywords": [
     "deadtown",

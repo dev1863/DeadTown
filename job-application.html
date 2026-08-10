@@ -14,7 +14,7 @@
     <link href="assets/images/favicon.ico" rel="icon" type="image/png"/>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Changa:wght@500;600;700;800&family=Unbounded:wght@400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
 
     <!-- Bootstrap 5 RTL -->
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" rel="stylesheet"/>
@@ -24,10 +24,14 @@
     <link href="assets/css/style.css" rel="stylesheet"/>
     <link href="assets/css/responsive.css" rel="stylesheet"/>
     <link href="assets/css/aos.css" rel="stylesheet"/>
+    <link href="assets/css/deadtown-v2.css" rel="stylesheet"/>
+    <link href="assets/css/deadtown-v3.css" rel="stylesheet"/>
     <!-- SweetAlert2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"/>
 </head>
-<body>
+<body class="dt2">
+<div class="dt-aurora-bg" aria-hidden="true"></div>
+<div class="dt-grid-layer" aria-hidden="true"></div>
 <div class="site-wrapper">
     <!-- Header & Navigation -->
     <header>
@@ -47,7 +51,7 @@
                     </ul>
                     <div class="d-none d-lg-flex align-items-center gap-3">
                         <a class="btn-deadtown-primary" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-discord"></i> دخول الديسكورد
+                            <svg class="kick-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg> دخول الديسكورد
                         </a>
                     </div>
                 </div>
@@ -65,7 +69,7 @@
                     <li><a class="nav-link" href="index.html"><i class="fa-solid fa-house me-2"></i> الرئيسية</a></li>
                     <li><a class="nav-link" href="rules.html"><i class="fa-solid fa-scale-balanced me-2"></i> القوانين</a></li>
                     <li><a class="nav-link active" href="job-application.html"><i class="fa-solid fa-id-card me-2"></i> تقديم الوظائف</a></li>
-                    <li><a class="nav-link text-primary" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener"><i class="fa-brands fa-discord me-2"></i> سيرفر الديسكورد</a></li>
+                    <li><a class="nav-link text-primary" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener"><svg class="kick-ico me-2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg> سيرفر الديسكورد</a></li>
                 </ul>
             </div>
         </aside>
@@ -74,6 +78,7 @@
     <!-- Page Banner / Header -->
     <div class="hero-main2 hero_faq py-5">
         <div class="container text-center" data-aos="fade-up">
+            <span class="dt-kicker justify-content-center mb-3" style="width: 100%;"><span class="k-box"></span> RECRUITMENT PORTAL</span>
             <h1 class="display-4 fw-bold text-white mb-2">بوابة التقديم والتوظيف</h1>
             <p class="text-muted lead mx-auto mb-4" style="max-width: 650px;">
                 اختر القطاع الذي ترغب بالانضمام إليه وقم بتعبئة نموذج التقديم الرسمي لسيرفر DeadTown.
@@ -94,7 +99,15 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10" data-aos="fade-up">
                     <div class="job-portal-card">
-                        
+
+                        <!-- Steps Indicator -->
+                        <div class="steps-indicator">
+                            <span class="step-chip active"><span class="step-num">1</span> اختر القطاع</span>
+                            <span class="step-chip active"><span class="step-num">2</span> بياناتك</span>
+                            <span class="step-chip active"><span class="step-num">3</span> الأسئلة المهنية</span>
+                            <span class="step-chip active"><span class="step-num">4</span> التعهد والإرسال</span>
+                        </div>
+
                         <!-- Step 1: Select Department -->
                         <div class="mb-5">
                             <h3 class="text-white fw-bold mb-2"><i class="fa-solid fa-layer-group text-primary me-2"></i> 1. اختر القطاع المطلوب:</h3>
@@ -182,7 +195,7 @@
                             </div>
 
                             <!-- Step 4: Rules Agreement -->
-                            <div class="mb-5 p-4 rounded-3" style="background: rgba(15,9,36,0.7); border: 1px solid rgba(137,0,255,0.3);">
+                            <div class="mb-5 p-4 rounded-3 job-pledge-panel">
                                 <h4 class="text-white fw-bold mb-3"><i class="fa-solid fa-handshake text-primary me-2"></i> 4. الإقرار والتعهد بالالتزام:</h4>
                                 
                                 <div class="form-check mb-3">
@@ -235,10 +248,10 @@
                 <div class="col-md-6 text-center text-md-end">
                     <div class="d-flex justify-content-center justify-content-md-end gap-3">
                         <a class="btn-deadtown-outline py-2 px-3" href="https://discord.gg/U6n9MdBhqs" target="_blank" rel="noopener" aria-label="Discord">
-                            <i class="fa-brands fa-discord"></i>
+                            <svg class="kick-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
                         </a>
                         <a class="btn-deadtown-outline py-2 px-3" href="https://kick.com/yazenali800" target="_blank" rel="noopener" aria-label="Kick">
-                            <i class="fa-solid fa-play text-success"></i>
+                            <svg class="kick-ico lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M1.333 0h8v5.333H12V2.667h2.667V0h8v8H20v2.667h-2.667v2.666H20V16h2.667v8h-8v-2.667H12v-2.666H9.333V24h-8Z"/></svg>
                         </a>
                     </div>
                 </div>
@@ -247,7 +260,7 @@
             <hr style="border-color: rgba(137,0,255,0.2);"/>
 
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-2">
-                <p class="text-muted small mb-0">حقوق الطبع والنشر © 2025 DeadTown. جميع الحقوق محفوظة.</p>
+                <p class="text-muted small mb-0">حقوق الطبع والنشر © 2026 DeadTown. جميع الحقوق محفوظة.</p>
                 <div class="d-flex gap-4 mt-3 mt-md-0">
                     <a href="index.html" class="text-muted small text-decoration-none">الرئيسية</a>
                     <a href="rules.html" class="text-muted small text-decoration-none">القوانين</a>

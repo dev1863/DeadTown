@@ -1,0 +1,25 @@
+[build]
+publish = "."
+functions = "netlify/functions"
+
+[functions]
+  [functions."*"]
+    node_bundler = "esbuild"
+
+[[redirects]]
+from = "/submit-application"
+to = "/.netlify/functions/submit-application"
+status = 200
+force = false
+
+[[redirects]]
+from = "/rules"
+to = "/rules.html"
+status = 200
+force = false
+
+[[redirects]]
+from = "/job-application"
+to = "/job-application.html"
+status = 200
+force = false
