@@ -1,0 +1,12 @@
+{
+  "name": "deadtown-bot",
+  "version": "1.0.0",
+  "description": "DeadTown Discord presence bot - zero dependencies",
+  "main": "bot-presence.js",
+  "scripts": {
+    "start": "node bot-presence.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
